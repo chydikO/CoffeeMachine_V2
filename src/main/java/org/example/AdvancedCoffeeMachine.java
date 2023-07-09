@@ -8,6 +8,14 @@ public class AdvancedCoffeeMachine extends CoffeeMachine {
         this.milkCapacity = 200;
     }
 
+    public void setMilkCapacity(int milkCapacity) {
+        this.milkCapacity = milkCapacity;
+    }
+
+    public int getMilkCapacity() {
+        return milkCapacity;
+    }
+
     public void addMilk(int amount) {
         if (milkCapacity + amount > milkCapacity) {
             throw new RuntimeException("Milk capacity exceeded");
